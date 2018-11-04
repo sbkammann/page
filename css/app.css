@@ -1,0 +1,24 @@
+body {
+  background-color: black;
+}
+h1, p {
+  color: red;
+  text-align: justify;
+}
+h1 {
+  padding-top: 50px;
+  text-align: center;
+}
+a {
+  color: red;
+}
+li {
+  display: inline;
+  margin: 7%;
+}
+
+#box {
+  margin-left: auto;
+  margin-right:auto;
+  width: 50%;
+}
