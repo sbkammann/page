@@ -9,7 +9,7 @@
   <body>
     <div id="box">
       <h1>Math Drills</h1>
-      <div class="progress-bar">
+      <div id="progressBar">
       </div>
       <div class="navbar">
         <div class="dropdown">
@@ -23,26 +23,25 @@
             <div class="row">
               <div class="column">
                 <h3>Numbers</h3>
-                  <input type="checkbox" name="numbers" value="zero">exclude 0<br>
-                  <input type="checkbox" name="numbers" value="one">exclude 1<br>
+                  <input id="excludeZero" type="checkbox" name="numbers" value="zero">exclude 0<br>
+                  <input id="excludeOne" type="checkbox" name="numbers" value="one">exclude 1<br>
                   <h3>focused mode</h6>
-                  <input type="checkbox" name="numbers" value="one">focused mode<br>
+                  <input id="focusedMode" type="checkbox" name="numbers" value="one">focused mode<br>
                   <input id="focusNumber" type="text" placeholder="type in number"> timetable<br>
               </div>
               <div class="column">
                 <h3>Mode</h3>
-                <input type="radio" name="mode" value="zero">endless<br>
-                <input type="radio" name="mode" value="one">timed<br>
-                <input id="focusNumber" type="text" placeholder="How long?"><br>
-                <input type="radio" name="mode" value="one">limited<br>
-                <input id="focusNumber" type="text" placeholder="How many problems?"><br>
-                <input type="radio" name="mode" value="one">points<br>
-                <input id="focusNumber" type="text" placeholder="Point limit?"><br>
+                <input id="endless" type="radio" name="mode" value="zero">endless<br>
+                <input id="timed" type="radio" name="mode" value="one">timed<br>
+                <input id="duration" type="text" placeholder="How long?"><br>
+                <input id="limited" type="radio" name="mode" value="one">limited<br>
+                <input id="problemNumber" type="text" placeholder="How many problems?"><br>
+                <input id="points" type="radio" name="mode" value="one">points<br>
+                <input id="pointlimit" type="text" placeholder="Point limit?"><br>
               </div>
               <div class="column">
                 <h3>Penalty</h3>
-                <input type="checkbox" name="penalty" value="zero" title="subtract points when incorrect">Penalty<br>
-
+                <input id="penalty" type="checkbox" name="penalty" value="zero" title="subtract points when incorrect">Penalty<br>
               </div>
             </div>
           </div>
