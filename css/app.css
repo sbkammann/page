@@ -1,7 +1,7 @@
 body {
   background-color: black;
 }
-h1, p {
+h1, p, span {
   color: red;
   text-align: justify;
 }
@@ -12,7 +12,7 @@ h1 {
 a {
   color: red;
 }
-li {
+li.navigation {
   display: inline;
   margin: 7%;
 }
