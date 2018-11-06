@@ -4,12 +4,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Math Drills</title>
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/games.css">
   </head>
   <body>
     <div id="box">
       <h1>Math Drills</h1>
       <div class="progress-bar">
+      </div>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Settings
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="header">
+              <h2>Settings</h2>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h3>Numbers</h3>
+                  <input type="checkbox" name="numbers" value="zero">exclude 0<br>
+                  <input type="checkbox" name="numbers" value="one">exclude 1<br>
+                  <h3>focused mode</h6>
+                  <input type="checkbox" name="numbers" value="one">focused mode<br>
+                  <input id="focusNumber" type="text" placeholder="type in number"> timetable<br>
+              </div>
+              <div class="column">
+                <h3>Mode</h3>
+                <input type="radio" name="mode" value="zero">endless<br>
+                <input type="radio" name="mode" value="one">timed<br>
+                <input id="focusNumber" type="text" placeholder="How long?"><br>
+                <input type="radio" name="mode" value="one">limited<br>
+                <input id="focusNumber" type="text" placeholder="How many problems?"><br>
+                <input type="radio" name="mode" value="one">points<br>
+                <input id="focusNumber" type="text" placeholder="Point limit?"><br>
+              </div>
+              <div class="column">
+                <h3>Penalty</h3>
+                <input type="checkbox" name="penalty" value="zero" title="subtract points when incorrect">Penalty<br>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="child"></div>
       <input id="userInput" type="text" placeholder="type answer here">
