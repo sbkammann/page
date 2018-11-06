@@ -27,7 +27,7 @@ if (excludeZero.checked) { // can you have 0 but not 1?
 }
 if (excludeOne.checked) {
   add = 2;
-  num = 10;
+  num = 9;
 }
 else {
   add = 0;
@@ -60,7 +60,15 @@ function check(){
     child.childNodes[0].innerHTML += " "+result;
     if (document.getElementById('limited').checked){
       const progress = document.createElement('div');
-      progress.style.color = "green"; //.setAttribute('color', 'green'); need to set width etc. 
+    //  progress.style.backgroundcolor = "white"; //.setAttribute('color', 'green'); need to set width etc.
+
+      progress.setAttribute('style', `width: ${window.innerWidth/document.getElementById('problemNumber').value}px;`+' background-color: green; '+
+      "height: 20px;");
+// TODO:  display done message or something
+// TODO: need points
+// TODO: timer and countdown for timed mode
+
+
       progressBar.appendChild(progress);
     }
     randomNumber();
